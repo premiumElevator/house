@@ -5,8 +5,8 @@
  * colors (only after it's been drawn, of course).
  *
  * This class was written as an early example for teaching Java with BlueJ.
- * 
- * @author  Michael Kšlling and David J. Barnes
+ *
+ * @author  Michael Kï¿½lling and David J. Barnes
  * @version 2016.02.29
  */
 public class Picture
@@ -32,7 +32,7 @@ public class Picture
     {
         background = new Square();
         background2 = new Square();
-        hill = new Triangle();  
+        hill = new Triangle();
         sun = new Circle();
         sonicBody = new Person();
         sonicHair = new Triangle();
@@ -51,43 +51,49 @@ public class Picture
     public void draw()
     {
         if(!drawn) {
-            
+
             background2.changeColor("blue");
             background2.moveHorizontal(-375);
             background2.moveVertical(-180);
             background2.changeSize(580);
             background2.makeVisible();
-            
+
             background.changeColor("green");
             background.moveHorizontal(-375);
             background.moveVertical(20);
             background.changeSize(580);
             background.makeVisible();
-            
-          
-    
+
+
+
             hill.changeSize(60, 180);
             hill.moveHorizontal(-30);
             hill.moveVertical(-60);
             hill.makeVisible();
-    
+
             sun.changeColor("yellow");
             sun.moveHorizontal(100);
             sun.moveVertical(-40);
             sun.changeSize(80);
             sun.makeVisible();
-            
+
             sonicBody.changeColor("blue");
             sonicBody.changeSize(80, 60);
             sonicBody.moveHorizontal(30);
             sonicBody.moveVertical(50);
             sonicBody.makeVisible();
-            
+
             sonicHair.changeColor("blue");
             sonicHair.changeSize(40, 30);
-            sonicHair.moveHorizontal(90);
+            sonicHair.moveHorizontal(98);
             sonicHair.moveVertical(30);
             sonicHair.makeVisible();
+            
+            sonicHead.changeColor("blue");
+            sonicHead.changeSize(45);
+            sonicHead.moveHorizontal(55);
+            sonicHead.moveVertical(110);
+            sonicHead.makeVisible();
             drawn = true;
         }
     }
