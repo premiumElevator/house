@@ -133,10 +133,19 @@ public class Picture
      */
     public void setBlackAndWhite()
     {
-        background.changeColor("black");
         background2.changeColor("white");
+        background.changeColor("black");
         hill.changeColor("black");
         sun.changeColor("black");
+        sonicBody.changeColor("white");
+        sonicHair.changeColor("white");
+        sonicHead.changeColor("white");
+        sonicEye1.changeColor("black");
+        sonicPupil1.changeColor("white");
+        sonicEye2.changeColor("black");
+        sonicPupil2.changeColor("white");
+        sonicMouth.changeColor("black");
+        
     }
 
     /**
