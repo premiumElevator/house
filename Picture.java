@@ -15,6 +15,14 @@ public class Picture
     private Square background2;
     private Triangle hill;
     private Circle sun;
+    private Person sonicBody;
+    private Triangle sonicHair;
+    private Circle sonicHead;
+    private Circle sonicEye1;
+    private Circle sonicPupil1;
+    private Circle sonicEye2;
+    private Circle sonicPupil2;
+    private Circle sonicMouth;
     private boolean drawn;
 
     /**
@@ -26,6 +34,14 @@ public class Picture
         background2 = new Square();
         hill = new Triangle();  
         sun = new Circle();
+        sonicBody = new Person();
+        sonicHair = new Triangle();
+        sonicHead = new Circle();
+        sonicEye1 = new Circle();
+        sonicPupil1 = new Circle();
+        sonicEye2 = new Circle();
+        sonicPupil2 = new Circle();
+        sonicMouth = new Circle();
         drawn = false;
     }
 
@@ -60,6 +76,18 @@ public class Picture
             sun.moveVertical(-40);
             sun.changeSize(80);
             sun.makeVisible();
+            
+            sonicBody.changeColor("blue");
+            sonicBody.changeSize(80, 60);
+            sonicBody.moveHorizontal(30);
+            sonicBody.moveVertical(50);
+            sonicBody.makeVisible();
+            
+            sonicHair.changeColor("blue");
+            sonicHair.changeSize(40, 30);
+            sonicHair.moveHorizontal(90);
+            sonicHair.moveVertical(30);
+            sonicHair.makeVisible();
             drawn = true;
         }
     }
