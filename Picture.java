@@ -94,6 +94,36 @@ public class Picture
             sonicHead.moveHorizontal(55);
             sonicHead.moveVertical(110);
             sonicHead.makeVisible();
+            
+            sonicEye1.changeColor("white");
+            sonicEye1.changeSize(15);
+            sonicEye1.moveHorizontal(57);
+            sonicEye1.moveVertical(123);
+            sonicEye1.makeVisible();
+            
+            sonicEye2.changeColor("white");
+            sonicEye2.changeSize(15);
+            sonicEye2.moveHorizontal(77);
+            sonicEye2.moveVertical(123);
+            sonicEye2.makeVisible();
+            
+            sonicPupil1.changeColor("black");
+            sonicPupil1.changeSize(5);
+            sonicPupil1.moveHorizontal(60);
+            sonicPupil1.moveVertical(128);
+            sonicPupil1.makeVisible();
+            
+            sonicPupil2.changeColor("black");
+            sonicPupil2.changeSize(5);
+            sonicPupil2.moveHorizontal(80);
+            sonicPupil2.moveVertical(128);
+            sonicPupil2.makeVisible();
+            
+            sonicMouth.changeColor("black");
+            sonicMouth.changeSize(10);
+            sonicMouth.moveHorizontal(70);
+            sonicMouth.moveVertical(140);
+            sonicMouth.makeVisible();
             drawn = true;
         }
     }
